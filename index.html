@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="theme-color" content="#333">
     <style type="text/css">
-/*=== Setup ===*/
+    /*=== Setup ===*/
     * { margin:0 auto; padding:0; outline:none; color: inherit; }
     html { }
     body { font-family: Arimo, Century Gothic, Helvetica, Arial, sans-serif; font-size: 16px; color: #444; }
@@ -32,53 +32,36 @@
     }
     body {
       color: #444;
+      font-size: 13px;
       font-family: Arimo, Helvetica, Arial, sans-serif;
-      padding: 10px;
+      padding: 15px;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       background: linear-gradient(0, rgba(77,193,204,1) 0%,rgba(32,178,191,1) 100%);
     }
     a {
       color: #26a4af;
     }
-    .picture-frame {
-      width: 80px;
-      height: 80px;
-      border-radius: 40px;
-      overflow: hidden;
-      margin: 20px auto;
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
-      transition: all 0.2s ease-in-out;
-    }
-    input[type=checkbox]:checked + .picture-frame {
-      height: 200px;
-      width: 200px;
-      border-radius: 100px;
-    }
-    .picture {
-      height: 100%;
-      cursor: pointer;
-      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    }
-    .picture[alt^="James"] {
-      transform: rotate(315deg);
-    }
-    .stateful-image {
-      display: none;
+    h3:not(:first-child) {
+      margin-top: 1em;
     }
     .section {
       box-sizing: border-box;
-      margin: 0 auto 20px;
+      margin: 0 0 15px;
       padding: 20px;
-      width: 400px;
+      width: min(30em, 100%);
       max-width: 100%;
-      font-size: 13px;
       background-color: #F0F3F2;
       border-radius: 3px;
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
       text-shadow: 1px 1px 0px #FFF;
       overflow: hidden;
     }
-    .separator {
-      margin-top: 1em;
+    .section:last-child {
+      margin-bottom: 0;
     }
     </style>
   </head>
@@ -92,7 +75,6 @@
         <li>early adopter</li>
         <li>technical leader</li>
       </ul>
-      <div class="separator"></div>
       <h3>Elsewhere:</h3>
       <ul>
         <li><a href="mailto:dambrisco@gmail.com">gmail</a></li>
