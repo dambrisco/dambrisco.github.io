@@ -10,7 +10,10 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { -moz-text-size-adjust: none; -webkit-text-size-adjust: none; text-size-adjust: none; }
     body { min-height: 100dvh; line-height: 1.5; -webkit-font-smoothing: antialiased; }
-    h1, h2, h3, h4 { text-wrap: balance; }
+    h1 { font-size: 2.0em; font-weight: bold; margin: 0 0 1.2em; text-wrap: balance; }
+    h2 { font-size:1.5em; font-weight: bold; letter-spacing:-1px; margin:0 0 1em; text-wrap: balance; }
+    h3 { font-size:1.2em; margin:0 0 .8em; text-wrap: balance; }
+    h4 { font-size:1em; margin:0 0 1em; text-wrap: balance; }
     p { text-wrap: pretty; }
     a { color: inherit; text-decoration: inherit; font-weight: inherit; }
     ul { list-style-type: none; }
@@ -39,9 +42,9 @@
     a {
       color: #26a4af;
     }
-    h2 { color: #666; font-size: clamp(1.25rem, 1rem + 1vw, 1.75rem); font-weight: bold; letter-spacing: -0.5px; margin: 0 0 0.75em; }
-    h3 { color: #666; font-size: clamp(1rem, 0.875rem + 0.5vw, 1.25rem); margin: 0 0 0.5em; }
-    h3:not(:first-child) {
+    h1 { color: #666; font-weight: bold; letter-spacing: -0.5px; margin: 0 0 0.75em; }
+    h2 { color: #666; margin: 0 0 0.5em; }
+    h2:not(:first-child) {
       margin-top: 1em;
     }
     p { margin: 1.3em 0 0; }
@@ -63,15 +66,15 @@
   </head>
   <body>
     <div class="section" id="about">
-      <h2 id="name">DJ Ambrisco - Denver, CO</h2>
-      <h3>About me:</h3>
+      <h1 id="name">DJ Ambrisco - Denver, CO</h1>
+      <h2>About me:</h2>
       <ul>
         <li>devops adherent</li>
         <li>programming polyglot</li>
         <li>early adopter</li>
         <li>technical leader</li>
       </ul>
-      <h3>Elsewhere:</h3>
+      <h2>Elsewhere:</h2>
       <ul>
         <li><a href="mailto:dambrisco@gmail.com">gmail</a></li>
         <li><a href="https://github.com/dambrisco">github</a></li>
@@ -80,7 +83,7 @@
       </ul>
     </div>
     <div class="section" id="preferences">
-      <h3>Preferences (in no particular order):</h3>
+      <h2>Preferences (in no particular order):</h2>
       <ul>
         <li>vscode</li>
         <li>zsh</li>
@@ -91,7 +94,7 @@
       </ul>
     </div>
     <div class="section" id="languages">
-      <h3>Languages (in a somewhat particular order):</h3>
+      <h2>Languages (in a somewhat particular order):</h2>
       <ul>
         <li>Go</li>
         <li>Rust</li>
