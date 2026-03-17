@@ -6,40 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="theme-color" content="#333">
     <style type="text/css">
-    /*=== Setup ===*/
-    * { margin:0 auto; padding:0; outline:none; color: inherit; }
-    html { }
-    body { font-family: Arimo, Century Gothic, Helvetica, Arial, sans-serif; font-size: 16px; color: #444; }
-    a { text-decoration: inherit; font-weight: inherit; }
-    /*a:hover { color: #7c993a; }*/
-    h1 { color: #666; font-size: 2.0em; font-weight: bold; margin: 0 0 1.2em; }
-    h2 { color:#666; font-size:1.5em; font-weight: bold; letter-spacing:-1px; margin:0 0 1em; }
-    h3 { color:#666; font-size:1.2em; margin:0 0 .8em; }
-    h4 { font-size:1em; margin:0 0 1em; }
-    p { line-height:1.5em; margin:1.3em 0 0; }
-    p:first-of-type { margin: 0; }
-    input, select, textarea { }
+    /*=== Modern Reset ===*/
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { -moz-text-size-adjust: none; -webkit-text-size-adjust: none; text-size-adjust: none; }
+    body { min-height: 100dvh; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+    h1, h2, h3, h4 { text-wrap: balance; }
+    p { text-wrap: pretty; }
+    a { color: inherit; text-decoration: inherit; font-weight: inherit; }
+    ul { list-style-type: none; }
+    img, picture, svg { display: block; max-width: 100%; }
+    input, button, textarea, select { font: inherit; }
     table { border-collapse: collapse; border-spacing: 0; }
     td { vertical-align: top; }
     img, fieldset { border: 0 none; }
-    ul { list-style-type: none; }
-    style, script { display: none; }
-    /*=== End Setup ===*/
+    /*=== End Reset ===*/
 
     ::selection {
       background: rgba(0, 0, 0, 0.3);
       text-shadow: 0px 0px 0px #000;
     }
-    html {
-      font-size: 10px;
-    }
     body {
       color: #444;
-      font-size: 13px;
+      font-size: clamp(0.875rem, 0.75rem + 0.5vw, 1.125rem);
       font-family: Arimo, Helvetica, Arial, sans-serif;
-      padding: 1.5rem;
-      min-height: 100dvh;
-      box-sizing: border-box;
+      padding: clamp(1rem, 3vw, 2.5rem);
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -49,15 +39,17 @@
     a {
       color: #26a4af;
     }
+    h2 { color: #666; font-size: clamp(1.25rem, 1rem + 1vw, 1.75rem); font-weight: bold; letter-spacing: -0.5px; margin: 0 0 0.75em; }
+    h3 { color: #666; font-size: clamp(1rem, 0.875rem + 0.5vw, 1.25rem); margin: 0 0 0.5em; }
     h3:not(:first-child) {
       margin-top: 1em;
     }
+    p { margin: 1.3em 0 0; }
+    p:first-of-type { margin: 0; }
     .section {
-      box-sizing: border-box;
-      margin: 0 0 15px;
-      padding: 20px;
+      margin: 0 0 clamp(0.75rem, 2vw, 1.25rem);
+      padding: clamp(1rem, 3vw, 1.75rem);
       width: min(30em, 100%);
-      max-width: 100%;
       background-color: #F0F3F2;
       border-radius: 3px;
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
