@@ -1,7 +1,7 @@
 <html>
   <head>
-    <title>hello!</title>
-    <link href="//fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <title>hello! | DJ Ambrisco</title>
+    <link href="//fonts.googleapis.com/css?family=Arimo:400,500,600,700,400italic,500italic,600italic,700italic" rel="stylesheet" type="text/css">
     <link rel="icon" sizes="192x192" href="/dambrisco.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="theme-color" content="#333">
@@ -11,7 +11,7 @@
     html { -moz-text-size-adjust: none; -webkit-text-size-adjust: none; text-size-adjust: none; }
     body { min-height: 100dvh; line-height: 1.5; -webkit-font-smoothing: antialiased; }
     h1 { font-size: 1.5em; font-weight: bold; margin: 0 0 1.2em; text-wrap: balance; }
-    h2 { font-size: 1.2em; font-weight: bold; letter-spacing: -1px; margin: 0 0 1em; text-wrap: balance; }
+    h2 { font-size: 1.2em; font-weight: bold; margin: 0 0 1em; text-wrap: balance; }
     h3 { font-size: 1.1em; margin: 0 0 .8em; text-wrap: balance; }
     h4 { font-size: 1em; margin: 0 0 1em; text-wrap: balance; }
     p { text-wrap: pretty; }
@@ -43,12 +43,11 @@
       color: #26a4af;
     }
     h1 { color: #666; font-weight: bold; letter-spacing: -0.5px; margin: 0 0 0.75em; }
-    h2 { color: #666; margin: 0 0 0.5em; }
+    h2 { color: #666; margin: 0 0 0.5em; font-weight: 600; }
     h2:not(:first-child) {
       margin-top: 1em;
     }
     p { margin: 1.3em 0 0; }
-    p:first-of-type { margin: 0; }
     .section {
       margin: 0 0 clamp(0.75rem, 2vw, 1.25rem);
       padding: clamp(1rem, 3vw, 1.75rem);
@@ -59,6 +58,16 @@
       text-shadow: 1px 1px 0px #FFF;
       overflow: hidden;
     }
+    h2:has(+ .subheading) {
+      margin-bottom: -0.25em;
+    }
+    .subheading {
+      color: #999;
+      font-style: italic;
+      font-size: 0.9em;
+      margin-top: 0;
+      margin-bottom: 0.5em;
+    }
     .section:last-child {
       margin-bottom: 0;
     }
@@ -67,41 +76,38 @@
   <body>
     <div class="section" id="about">
       <h1 id="name">DJ Ambrisco</h1>
-      <h2>About me:</h2>
+      <h2>About me</h2>
       <ul>
-        <li>devops adherent</li>
-        <li>programming polyglot</li>
-        <li>early adopter</li>
         <li>technical leader</li>
+        <li>systems thinker</li>
+        <li>early adopter</li>
+        <li>programming polyglot</li>
       </ul>
-      <h2>Elsewhere:</h2>
+      <h2>Elsewhere</h2>
       <ul>
-        <li><a href="mailto:dambrisco@gmail.com">gmail</a></li>
         <li><a href="https://github.com/dambrisco">github</a></li>
         <li><a href="https://www.linkedin.com/in/dambrisco">linkedin</a></li>
-        <li><a href="https://twitter.com/dambrisco">twitter</a></li>
       </ul>
     </div>
     <div class="section" id="preferences">
-      <h2>Preferences (in no particular order):</h2>
+      <h2>Preferences</h2>
+      <p class="subheading">in no particular order</p>
       <ul>
         <li>vscode</li>
-        <li>zsh</li>
-        <li>tmux</li>
+        <li>warp</li>
         <li>osx</li>
         <li>coffee</li>
         <li>spaces, unless dictated by standard</li>
       </ul>
     </div>
     <div class="section" id="languages">
-      <h2>Languages (in a somewhat particular order):</h2>
+      <h2>Languages</h2>
+      <p class="subheading">in a somewhat particular order</p>
       <ul>
         <li>Go</li>
         <li>Rust</li>
+        <li>Typescript/Javascript</li>
         <li>Elixir</li>
-        <li>C#</li>
-        <li>Java</li>
-        <li>Javascript</li>
       </ul>
     </div>
   </body>
